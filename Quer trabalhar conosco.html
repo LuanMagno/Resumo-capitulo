@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+</head>
+<body>
+	<h2>Para entrar em contato conosco, preencha o formulário</h2>
+	<hr>
+	<p><strong><em>Habilidades necessárias</em></strong></p>
+<!--ul para lista desodernada e ol para oordenada, li se usa dentro de ambos -->
+		<ul>
+			<li>Ingles intermediário</li>
+			<li>Habilidade comunicativa</li>
+			<li>Velocidade no atendimento ao cliente</li>
+		</ul>
+<!--Para mudar os formatos da linha desodernada se pode usar o (circle e o square) no type -->
+	<p><strong><em>Cursos antes de começar o trabalho</em></strong></p>
+<!--Para mudar o formato nas listas oordenadas se usa o (1,A/a(a ate z),I/i(algarismo romano) -->
+		<ol>
+			<li>Curso de etiqueta</li>
+			<li>Curso de atendimento</li>
+			<li>Curso basico de culinária e gastronomia</li>
+		</ol>
+	<form>
+<!--sempre colocar value e name para localizar futuramente, value é usado para definir um valor para algo, como no botão -->
+		<p>email para contato:</p>
+		<input type="text" name="cadastro">
+	<!-- input text para texto-->
+		<p>Nome completo:</p>
+		<input type="text" name="nome">
+		<p>Cpf:</p>
+		<input type="password" name="senha">
+		<p>Em qual área você gostaria de trabalhar:</p>
+<!-- Radio para selecionar as áreas, para escolher apenas uma opção o name precisa ser o mesmo, o value é para diferenciar futuramente-->
+		<input type="radio" name="unidadetrabalho" value="Recepção">Recepção<br>
+		<input type="radio" name="unidadetrabalho" value="Atendimento">Atendimento<br>
+		<input type="radio" name="unidadetrabalho" value="Cozinha">Cozinha<br>
+		<p>Para qual região você está se candidatando:</p>
+<!-- select para selecionar entre várias opções, o value tem que ser diferente-->
+		<select name="região">
+			<option value="Bh">Belo Horizonte</option>
+			<option value="Sp">São Paulo</option>
+			<option value="Rj">Rio de Janeiro</option>
+		</select>
+		<p>Experiencia:</p>
+		<textarea></textarea><br><br>
+		<!--checkbox para selecionar entre várias opções na caixa -->
+		<p>Como descobriu nossa empresa:</p>
+		<input type="checkbox" name="" value="Amigo"> Alguem me falou sobre<br>
+		<input type="checkbox" name="" value="Coincidencia"> Conheci por coincidencia<br>
+		<input type="checkbox" name="" value="Propaganda"> Por propagandas na internet<br><br>
+<!--type submit para criar um botão para enviar os dados, escrever o value -->
+		<input type="submit" name="curriculo" value="Enviar curriculo">
+	</form>
+	<hr>
+	<a href="file:///C:/Users/luanm/Desktop/programação/1%20projeto/Resumo%20geral%201%20capitulo/Index.html">Voltar ao site inicial</a>	
+</body>
+</html>
